@@ -466,6 +466,7 @@ MonoBehaviour:
   waves:
   - enemies:
     - {fileID: 1304478948418465128, guid: bf8fea2cacb051b4ea904e2ec674fc3c, type: 3}
+    - {fileID: 1304478948418465128, guid: 627966e9420600949ba973f7299fbbf7, type: 3}
     timeBetweenSpawns: 2
     timeBetweenWaves: 8
     enemiesCount: 0
@@ -1210,7 +1211,7 @@ GameObject:
   - component: {fileID: 1741635491}
   m_Layer: 0
   m_Name: Diamond
-  m_TagString: Untagged
+  m_TagString: Diamond
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1339,7 +1340,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Diamond
   maxHealth: 200
   currentHealth: 0
-  healthBar: {fileID: 0}
+  healthBar: {fileID: 1805605431}
 --- !u!1 &1805605429
 GameObject:
   m_ObjectHideFlags: 0
