@@ -1429,6 +1429,7 @@ GameObject:
   - component: {fileID: 1885917740}
   - component: {fileID: 1885917741}
   - component: {fileID: 1885917742}
+  - component: {fileID: 1885917743}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -1568,6 +1569,20 @@ MonoBehaviour:
   firePoint: {fileID: 1060693458}
   pooler: {fileID: 1713829860}
   weaponText: {fileID: 1378435365}
+--- !u!114 &1885917743
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1885917737}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7582251b8a41f7e4bb174b3889409a2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerHealth
+  maxHealth: 100
+  currentHealth: 0
 --- !u!1 &2065611181
 GameObject:
   m_ObjectHideFlags: 0
