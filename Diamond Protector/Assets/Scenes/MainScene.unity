@@ -254,6 +254,69 @@ Transform:
   - {fileID: 619394802}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &378344573
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 378344574}
+  m_Layer: 0
+  m_Name: '[EnemySpawner]'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &378344574
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 378344573}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 408995210}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &408995209
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 408995210}
+  m_Layer: 0
+  m_Name: EnemySpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &408995210
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 408995209}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 378344574}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -935,6 +998,15 @@ MonoBehaviour:
   - objectTag: Bullet
     prefab: {fileID: 7315907540876465766, guid: 8d2ab6f22ddca4043b7bd48569a39766, type: 3}
     size: 20
+  - objectTag: AKMBullet
+    prefab: {fileID: 1564080775760721251, guid: d70a887e535ff664da810343c78fefc4, type: 3}
+    size: 20
+  - objectTag: TankHeavyBullet
+    prefab: {fileID: 2826000967892965500, guid: 0534ce682241c85469c4171fe6ee2dcc, type: 3}
+    size: 20
+  - objectTag: EnemyBullet
+    prefab: {fileID: 8831730718110420670, guid: d6bf90b8b98702548b19a06df9a42323, type: 3}
+    size: 40
 --- !u!1 &1885917737
 GameObject:
   m_ObjectHideFlags: 0
@@ -950,7 +1022,7 @@ GameObject:
   - component: {fileID: 1885917742}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1078,6 +1150,8 @@ MonoBehaviour:
   bulletForce: 20
   weapons:
   - {fileID: 11400000, guid: 5895f7d62cb13da40baec2918975d7a8, type: 2}
+  - {fileID: 11400000, guid: 558c7b34d7ec3834f8bfce979c804c1a, type: 2}
+  - {fileID: 11400000, guid: e956d562dd33fe64092c5690ea1beee3, type: 2}
   currentWeaponIndex: 0
   currentMag: 0
   nextTimeToFire: 0
@@ -1173,3 +1247,4 @@ SceneRoots:
   - {fileID: 806289184}
   - {fileID: 110655159}
   - {fileID: 2065611184}
+  - {fileID: 378344574}

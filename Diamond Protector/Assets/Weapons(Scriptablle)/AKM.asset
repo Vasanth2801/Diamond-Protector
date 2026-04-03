@@ -16,4 +16,4 @@ MonoBehaviour:
   damage: 15
   fireRate: 1.8
   magazineSize: 120
-  bulletPrefab: {fileID: 0}
+  bulletPrefab: {fileID: 1564080775760721251, guid: d70a887e535ff664da810343c78fefc4, type: 3}

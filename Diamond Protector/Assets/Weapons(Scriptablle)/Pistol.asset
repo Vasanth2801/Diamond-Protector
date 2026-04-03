@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::WeaponData
   weaponName: Pistol
   damage: 10
-  fireRate: 1
-  magazineSize: 10
+  fireRate: 0.8
+  magazineSize: 50
   bulletPrefab: {fileID: 7315907540876465766, guid: 8d2ab6f22ddca4043b7bd48569a39766, type: 3}
