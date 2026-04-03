@@ -59,6 +59,15 @@ public class EnemySpawner : MonoBehaviour
 
     IEnumerator SpawnWave()
     {
-
+        if(currentWave < waves.Length)
+        {
+            for(int i=0;i< waves[currentWave].enemies.Length;i++)
+            {
+                Transform spawnPoints = spawnPoint[Random.Range(0,spawnPoint.Length)];
+                GameObject enemy = Instantiate(waves[currentWave].enemies[i],spawnPoints.position,Quaternion.identity);
+                yield return new WaitForSeconds(waves[currentWave].timeBetweenSpawns);
+            }
+            Debug.Log("Wave " + currentWave + " Spawned!");
+        }
     }
 }
