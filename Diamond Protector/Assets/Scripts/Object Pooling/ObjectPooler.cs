@@ -29,6 +29,8 @@ public class ObjectPooler : MonoBehaviour
                 objPool.SetActive(false);
                 obj.Enqueue(objPool);
             }
+
+            poolDictionary.Add(pool.objectTag, obj);
         }
     }
 
