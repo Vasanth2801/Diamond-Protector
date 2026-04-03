@@ -17,6 +17,7 @@ public class PlayerHealth : MonoBehaviour
         if(currentHealth <= 0)
         {
             currentHealth = 0;
+            UIManager.instance.GameOver();
             Destroy(gameObject);
         }
     }

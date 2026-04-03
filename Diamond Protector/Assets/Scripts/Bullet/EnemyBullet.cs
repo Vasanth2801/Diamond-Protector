@@ -12,5 +12,16 @@ public class EnemyBullet : MonoBehaviour
                 ph.TakeDamage(10);
             }
         }
+
+        if(collision.gameObject.tag == " Diamond")
+        {
+            Diamond diamond = collision.gameObject.GetComponent<Diamond>();
+            if(diamond != null)
+            {
+                diamond.TakeDamage(10);
+            }
+        }
+
+        gameObject.SetActive(false);
     }
 }
