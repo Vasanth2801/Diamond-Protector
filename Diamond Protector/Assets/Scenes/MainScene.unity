@@ -627,6 +627,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1713829859}
+  - component: {fileID: 1713829860}
   m_Layer: 0
   m_Name: ObjectPooler
   m_TagString: Untagged
@@ -649,6 +650,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 806289184}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1713829860
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1713829858}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97eeb2383b1ca114eb5f6e5ffe9a65be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ObjectPooler
+  pools:
+  - objectTag: Bullet
+    prefab: {fileID: 7315907540876465766, guid: 8d2ab6f22ddca4043b7bd48569a39766, type: 3}
+    size: 20
 --- !u!1 &1885917737
 GameObject:
   m_ObjectHideFlags: 0
